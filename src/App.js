@@ -1,13 +1,13 @@
 import React from 'react';
 import EditorialMain from './EditorialMain';
-import EditorialVideos from './EditorialVideos';
+import AllCards from './AllCards';
 import './App.css';
 
 function App() {
 	return (
 		<div>
 			<EditorialMain />
-			<EditorialVideos />
+			<AllCards />
 		</div>
 	);
 }
