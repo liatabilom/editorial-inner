@@ -1,17 +1,34 @@
 import React, { Component } from 'react';
 import EditorialVideo from './EditorialVideo';
+import SideVideo from './SideVideo';
+import './EditorialVideo.css';
+import SideLettering from './SideLettering';
+import './AllCards.css';
 
 class AllCards extends Component {
 	render() {
 		return (
-			<div className="editorial-container" style={{ background: '#F5F4EF' }}>
-				<div className="row">
-					<div className="card-body col-md-4 border border-dark">nada</div>
-					<div className="card-body col-md-4 border border-dark">
-						<EditorialVideo />
-					</div>
-					<div className="card-body col-md-4 border border-dark">nada</div>
+			<div>
+				<br />
+				<div>
+					<headear>
+						<SideLettering />
+					</headear>
 				</div>
+				<h2 className="container mt-4 mainCards">
+					<div className="row pl-4">
+						<div className="card-body p-0 col-md-4 border border-dark">
+							<SideVideo />
+						</div>
+						<div className="card-body p-0 col-md-2 border border-dark">
+							<EditorialVideo />
+						</div>
+						<div className="card-body p-0 col-md-4 border border-dark ">
+							<SideVideo />
+						</div>
+					</div>
+				</h2>
+				<br />
 			</div>
 		);
 	}

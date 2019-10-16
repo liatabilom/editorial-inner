@@ -7,7 +7,9 @@ function App() {
 	return (
 		<div>
 			<EditorialMain />
-			<AllCards />
+			<div style={{ background: '#F5F4EF' }}>
+				<AllCards />
+			</div>
 		</div>
 	);
 }

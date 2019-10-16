@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-class EditorialVideo extends Component {
+class SideVideo extends Component {
 	videoUrl = () => {
 		return (
 			<div>
 				<iframe
-					title="Background Video"
-					src="https://fast.wistia.com/embed/medias/nkb9qy45ba"
+					title="Side Video"
+					src="https://fast.wistia.com/embed/medias/sucnf4kgm7"
 					allowtransparency="true"
 					frameBorder="0"
 					scrolling="no"
-					className="editorial-video"
+					className="side-video"
 					name="wistia_embed"
-					width="190"
+					width="340"
 					height="600"
 					allowFullScreen
 					mozallowfullscreen="true"
@@ -29,4 +29,4 @@ class EditorialVideo extends Component {
 	}
 }
 
-export default EditorialVideo;
+export default SideVideo;
