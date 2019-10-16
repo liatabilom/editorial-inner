@@ -16,13 +16,13 @@ class AllCards extends Component {
 				</div>
 				<h2 className="container mt-4 mainCards">
 					<div className="row videoRow">
-						<div className="card-body p-0 col-md-4 border border-dark">
+						<div className="card-body p-0 col-md-4 ">
 							<SideVideo />
 						</div>
 						<div className="card-body p-0 col-md-2 border border-dark">
 							<EditorialVideo />
 						</div>
-						<div className="card-body p-0 col-md-4 border border-dark ">
+						<div className="card-body p-0 col-md-4 ">
 							<SideVideo />
 						</div>
 					</div>
