@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SideVideo extends Component {
 	videoUrl = () => {
 		return (
-			<div>
+			<div style={{ position: 'relative' }}>
 				<iframe
 					title="Side Video"
 					src="https://fast.wistia.com/embed/medias/sucnf4kgm7"

@@ -19,7 +19,6 @@ class EditorialMain extends Component {
 						<img src="https://i.imgur.com/TRN8ytK.jpg" alt="Spring Model" className="photoPack" />
 					</div>
 				</div>
-				<br />
 			</div>
 		);
 	}

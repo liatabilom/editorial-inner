@@ -5,12 +5,12 @@ class EditorialVideo extends Component {
 		return (
 			<div>
 				<iframe
-					title="Background Video"
+					title="Main Editorial Video"
 					src="https://fast.wistia.com/embed/medias/nkb9qy45ba"
 					allowtransparency="true"
 					frameBorder="0"
 					scrolling="no"
-					className="editorial-video"
+					className="main-editorial-video"
 					name="wistia_embed"
 					width="190"
 					height="600"

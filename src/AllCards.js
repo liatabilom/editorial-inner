@@ -3,7 +3,6 @@ import EditorialVideo from './EditorialVideo';
 import SideVideo from './SideVideo';
 import './EditorialVideo.css';
 import SideLettering from './SideLettering';
-import './AllCards.css';
 
 class AllCards extends Component {
 	render() {
@@ -16,7 +15,7 @@ class AllCards extends Component {
 					</headear>
 				</div>
 				<h2 className="container mt-4 mainCards">
-					<div className="row pl-4">
+					<div className="row videoRow">
 						<div className="card-body p-0 col-md-4 border border-dark">
 							<SideVideo />
 						</div>

@@ -9,8 +9,7 @@
 	overflow: scroll;
 }
 
-/* .letteringBox {
-	position: relative;
+.letteringBox {
 	display: flex;
 	animation-name: move;
 	animation-duration: 0s;
@@ -22,7 +21,7 @@
 
 .letteringBox:hover {
 	animation-play-state: paused;
-} */
+}
 
 /* @keyframes move {
 	0% {
