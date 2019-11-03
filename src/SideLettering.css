@@ -2,6 +2,7 @@
 	display: flex;
 	position: absolute;
 	right: 0px;
+	top: 900px;
 }
 
 .letteringGroupContainer {
@@ -12,22 +13,18 @@
 .letteringBox {
 	display: flex;
 	animation-name: move;
-	animation-duration: 0s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
 	animation-timing-function: linear;
 	transition: transform 0.2s;
 }
 
-.letteringBox:hover {
-	animation-play-state: paused;
-}
-
-/* @keyframes move {
-	0% {
-		margin-left: -500px;
+@keyframes move {
+	5% {
+		margin-top: -60px;
 	}
 	100% {
-		margin-left: 50px;
+		margin-top: 70px;
 	}
-} */
+}

@@ -19,7 +19,7 @@ class AllCards extends Component {
 						<div className="card-body p-0 col-md-4 ">
 							<SideVideo />
 						</div>
-						<div className="card-body p-0 col-md-2 border border-dark">
+						<div className="card-body p-0 col-md-2 ">
 							<EditorialVideo />
 						</div>
 						<div className="card-body p-0 col-md-4 ">

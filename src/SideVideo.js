@@ -6,7 +6,7 @@ class SideVideo extends Component {
 			<div style={{ position: 'relative' }}>
 				<iframe
 					title="Side Video"
-					src="https://fast.wistia.com/embed/medias/sucnf4kgm7"
+					src="https://fast.wistia.com/embed/medias/dt7qp4xozn"
 					allowtransparency="true"
 					frameBorder="0"
 					scrolling="no"

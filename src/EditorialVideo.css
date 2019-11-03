@@ -1,3 +1,10 @@
-.editorial-video {
-	background-color: transparent;
+@media screen and (min-width: 480px) {
+	.draggableContainer {
+		align-content: center;
+	}
+
+	.letteringContainer {
+		position: absolute;
+		top: 200px;
+	}
 }

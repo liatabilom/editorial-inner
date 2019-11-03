@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 
 class EditorialVideo extends Component {
+	state = {
+		loaded: true,
+	};
+
 	videoUrl = () => {
 		return (
 			<div>
 				<iframe
 					title="Main Editorial Video"
-					src="https://fast.wistia.com/embed/medias/nkb9qy45ba"
-					allowtransparency="true"
+					src="//fast.wistia.com/embed/medias/tic0bqjt3c"
 					frameBorder="0"
 					scrolling="no"
 					className="main-editorial-video"
 					name="wistia_embed"
-					width="190"
-					height="600"
+					width="175"
+					height="3350"
 					allowFullScreen
 					mozallowfullscreen="true"
 					webkitallowfullscreen="true"
@@ -24,8 +27,26 @@ class EditorialVideo extends Component {
 			</div>
 		);
 	};
+
+	draggable = () => {
+		if (this.state.loaded === true) {
+			return (
+				<div
+					className="draggableContainer"
+					style={{
+						height: '600px',
+						width: '275px',
+						overflow: 'scroll',
+					}}
+				>
+					<div style={{ height: '450px', width: '275px', margin: '0' }}>{this.videoUrl()}</div>
+				</div>
+			);
+		}
+	};
+
 	render() {
-		return <div>{this.videoUrl()}</div>;
+		return <div>{this.draggable()}</div>;
 	}
 }
 
