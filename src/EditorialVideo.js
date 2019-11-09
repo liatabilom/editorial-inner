@@ -1,31 +1,9 @@
 import React, { Component } from 'react';
+import Draggable from 'react-draggable';
 
 class EditorialVideo extends Component {
 	state = {
 		loaded: true,
-	};
-
-	videoUrl = () => {
-		return (
-			<div>
-				<iframe
-					title="Main Editorial Video"
-					src="//fast.wistia.com/embed/medias/tic0bqjt3c"
-					frameBorder="0"
-					scrolling="no"
-					className="main-editorial-video"
-					name="wistia_embed"
-					width="175"
-					height="3350"
-					allowFullScreen
-					mozallowfullscreen="true"
-					webkitallowfullscreen="true"
-					oallowfullscreen="true"
-					msallowfullscreen="true"
-				></iframe>
-				<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
-			</div>
-		);
 	};
 
 	draggable = () => {
@@ -39,7 +17,23 @@ class EditorialVideo extends Component {
 						overflow: 'scroll',
 					}}
 				>
-					<div style={{ height: '450px', width: '275px', margin: '0' }}>{this.videoUrl()}</div>
+					<div style={{ height: '450px', width: '275px', margin: '0' }}>
+						<Draggable
+							axis="y"
+							bounds={(0, 10, 0, 10)}
+							handle=".handle"
+							grid={(25, 25)}
+							allowAnyClick={true}
+							disabled={true}
+						>
+							<img
+								src="https://i.imgur.com/19rIDZn.jpg"
+								alt="Carousel"
+								className="carouselAuto"
+								style={{ height: 5000, width: 250 }}
+							/>
+						</Draggable>
+					</div>
 				</div>
 			);
 		}
